@@ -32,7 +32,6 @@ export const ActionButton = (props) => {
 	const {
 		icon,
 		text,
-		editingUser,
 		actionType,
 		setEditingUser,
 		index,

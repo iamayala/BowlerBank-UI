@@ -200,8 +200,8 @@ td {
 	border-bottom: 1px solid rgba(59, 49, 40, 0.2);
 }
 
-#transactions table tr {
-}
+/* #transactions table tr {
+} */
 
 #transactions table td:nth-child(1),
 #transactions table td:nth-child(2),
@@ -404,8 +404,8 @@ input:disabled {
 	align-items: center;
 }
 
-.odd {
-}
+/* .odd {
+} */
 
 .even {
 	background-color: rgba(238, 238, 238, 0.5);

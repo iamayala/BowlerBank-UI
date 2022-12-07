@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import DATA from "../data";
 import { Dashboard } from "./Dashboard";
 import { LoginPage } from "./LoginPage";
 import { ClientDashboard } from "./ClientDashboard";
@@ -25,7 +24,7 @@ export const Authenticate = () => {
 			.catch((error) => {
 				console.log(error);
 			});
-	}, []);
+	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
 	// function to fetch all users
 	const fetchAllUsers = async () => {

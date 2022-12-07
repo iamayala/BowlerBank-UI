@@ -62,7 +62,7 @@ export const Dashboard = (props) => {
 		if (deleteUser !== null) {
 			deleteUserAccount(deleteUser);
 		}
-	}, [deleteUser]);
+	}, [deleteUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
 	const deleteUserAccount = async (data) => {
 		try {
@@ -104,7 +104,7 @@ export const Dashboard = (props) => {
 			// save
 			localStorage.setItem("users", JSON.stringify(filteredUsers));
 		}
-	}, [isUpdate]);
+	}, [isUpdate]); // eslint-disable-line react-hooks/exhaustive-deps
 
 	let modal = null;
 	if (editingUser !== null && editModal) {

@@ -10,7 +10,7 @@ export const MainContent = (props) => {
 
 	useEffect(() => {
 		setIsCurrentUserAdmin(client.isAdmin);
-	}, [isCurrentUserAdmin]);
+	}, [isCurrentUserAdmin]); // eslint-disable-line react-hooks/exhaustive-deps
 
 	const onSearchUser = (e) => {
 		setQuery(e.target.value);
