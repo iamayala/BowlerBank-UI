@@ -68,6 +68,7 @@ export const TransferPage = (props) => {
 				</option>
 			);
 		}
+		return null;
 	});
 
 	const transferFund = (event) => {

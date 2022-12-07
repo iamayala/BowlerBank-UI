@@ -12,7 +12,7 @@ export const ClientHome = (props) => {
 	useEffect(() => {
 		fetchUserTransactions();
 		fetchAllUsers();
-	}, []);
+	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
 	// function to fetch all users
 	const fetchUserTransactions = async () => {

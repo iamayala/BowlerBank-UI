@@ -129,10 +129,11 @@ export const SideLink = (props) => {
 
 	return (
 		<li>
+			{/* // eslint-disable-next-line react-hooks/exhaustive-deps */}
 			<a
 				onClick={clickLink}
 				className={active === page ? "active" : ""}
-				href="#"
+				href="/#"
 			>
 				<i className={icon}></i> {text}
 			</a>
