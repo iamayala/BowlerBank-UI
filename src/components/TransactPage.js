@@ -1,7 +1,7 @@
 import moment from "moment";
 import { useState } from "react";
 import { Notif } from "./Notif";
-import { formatNumber, findAccount, transact, trim, capitalize } from "./Utils";
+import { formatNumber, trim, capitalize } from "./Utils";
 
 export const TransactPage = (props) => {
 	const { users, type, client } = props;

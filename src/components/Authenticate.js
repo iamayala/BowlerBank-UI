@@ -3,6 +3,7 @@ import DATA from "../data";
 import { Dashboard } from "./Dashboard";
 import { LoginPage } from "./LoginPage";
 import { ClientDashboard } from "./ClientDashboard";
+import axios from "axios";
 
 export const Authenticate = () => {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -11,9 +12,19 @@ export const Authenticate = () => {
 	const [client, setClient] = useState(null);
 	const [clients, setClients] = useState([]);
 	const localUsers = localStorage.getItem("users");
+	const [accounts, setAccounts] = useState([]);
 
 	useEffect(() => {
 		fetchAllUsers();
+		// Implementation of AJAX
+		axios
+			.get("http://127.0.0.1:3001/users/all")
+			.then((response) => {
+				setAccounts(response.data);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
 	}, []);
 
 	// function to fetch all users
