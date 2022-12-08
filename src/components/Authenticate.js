@@ -43,7 +43,7 @@ export const Authenticate = () => {
 				}
 			}
 		} catch (error) {
-			alert("An error occurred" + error);
+			// alert("An error occurred" + error);
 		}
 	};
 
@@ -75,7 +75,7 @@ export const Authenticate = () => {
 				setNotif("");
 			}
 		} catch (error) {
-			alert("An error occurred" + error);
+			// alert("An error occurred" + error);
 		}
 	};
 
