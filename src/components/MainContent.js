@@ -68,23 +68,8 @@ export const MainContent = (props) => {
 				}}
 			>
 				<h1 className="main">Accounts</h1>
-				<form autoComplete="off" style={{ width: 300, marginBottom: 15 }}>
-					<input
-						id="username"
-						placeholder="Search"
-						autoComplete="off"
-						onChange={(e) => onSearchUser(e)}
-						value={query}
-						type="text"
-					/>
-				</form>
 			</div>
 			{query === "" ? bankAccounts : searchBankAccounts}
-			{searchResults.length === 0 ? (
-				<h3 style={{ textAlign: "center", marginTop: 20 }}>User Not Found!</h3>
-			) : (
-				""
-			)}
 		</section>
 	);
 };
